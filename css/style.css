@@ -1,0 +1,255 @@
+body {
+    background-color: #00b4c5;
+}
+
+h1 {
+    color:black;
+    text-align: center;
+    font-family: Ubuntu, serif;
+    font-size: 65px;
+}
+
+h2 {
+    color:black;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: Verdana;
+}
+
+p {
+    color:black;
+    font-family: Verdana;
+    line-height: 1.5;
+}
+
+li {
+    margin-left: 30px;   
+    line-height: 1.5;
+}
+
+div {
+    color:black;
+    font-family: Verdana;
+}
+
+img {
+    border-style: solid;
+    border-width: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 5px;
+    margin: 20px 20px 20px 20px;
+}
+
+img:hover {
+    border-width: 10px;
+}
+
+nav {
+    border: 2px solid black;
+    background-image: url("../images/cityBackground.jpg");
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    background-color: green;
+    border: solid black;
+    font-size: 30px;
+}
+
+.current_item{
+    background-color: #606ff3;
+    border-width: 8px;
+}
+
+div.title_animation{
+    display: inline-block;
+    width: 100px;
+    height: 32px;
+    margin: 30px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    animation-name: title_animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+audio {
+    display: block;
+    margin: auto;
+}
+
+#skip {
+    padding: 5px;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#skip:focus {
+    top: 40px;
+    position: relative;
+}
+
+#icon {
+    border: solid;
+    border-color: black;
+    border-radius: 50px;
+    border-width: 5px;
+    padding: 0px;
+    display: block;
+    margin-left: 90%;
+    width: 100px;
+}
+
+#item2 {
+    margin-top: 50px;
+}
+
+#audioButton {
+    color:black;
+    border: black solid 5px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 25px;
+    margin-bottom:50px;
+    margin-top: 15px;    
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: green;
+}
+
+.grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.grid_pets {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid_travel {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 800px) {
+    img {
+        margin: auto;
+    }
+
+    p {
+        display: block;
+        margin: 30px;
+    }
+
+    h3 {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        background-color: green;
+        border: solid black;
+        font-size: 50px;
+    }
+
+    img {
+        padding: 7px;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: #00b4c5;
+    }
+    
+    h1 {
+        color:black;
+        text-align: center;
+        font-size: 65px;
+    }
+    
+    h2 {
+        color:black;
+        text-align: center;
+        font-family: Verdana;
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        font-family: Verdana;
+    }
+    
+    p {
+        color:black;
+        font-family: Verdana;
+        line-height: 1.5;
+    }
+    
+    li {
+        margin-left: 30px;   
+        line-height: 1.5;
+    }
+    
+    div {
+        color:black;
+        font-family: Verdana;
+    }
+    
+    img {
+        border-style: solid;
+        border-width: 5px;
+        border-top-right-radius: 30px;
+        padding: 6px;
+        margin: 20px 20px 20px 20px;
+    }
+    
+}
+
+@keyframes title_animation {
+    0%      {background-color: red; left: 0%;}
+    25%     {background-color: orange; left: 45%;}
+    50%     {background-color: red; left: 85%;}
+    75%     {background-color: orange; left: 45%;}
+    100%    {background-color: red; left: 0%;}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    div.title_animation{
+        animation: none;
+    }
+    .gif{
+        display: none;
+    }
+}
+
+
